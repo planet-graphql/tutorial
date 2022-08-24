@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/server.ts"
+    "start": "prisma migrate deploy & ts-node src/server.ts"
   },
   "prisma": {
     "seed": "ts-node src/seed.ts"
@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@graphql-yoga/node": "^2.13.6",
-    "@planet-graphql/core": "^0.1.5",
+    "@planet-graphql/core": "0.1.7",
     "@prisma/client": "^4.2.1",
     "prisma": "^4.2.1"
   }
